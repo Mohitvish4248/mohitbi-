@@ -267,7 +267,7 @@
                     values: [totals.totalRestrictedSpent, totals.totalUnrestrictedSpent],
                     type: 'pie',
                     marker: {
-                        colors: ['#3498db', '#f1c40f'] // A more modern blue and yellow
+                        colors: ['#ffc107', '#21cc72'] // Yellow for Restricted, Green for Unrestricted (Original colors)
                     },
                     hoverinfo: 'label+percent+value',
                     textinfo: 'percent',
@@ -291,14 +291,14 @@
                         y: restrictedValues,
                         name: 'Restricted Funds',
                         type: 'bar',
-                        marker: { color: '#3498db' }
+                        marker: { color: '#ffc107' }
                     },
                     {
                         x: categories,
                         y: unrestrictedValues,
                         name: 'Unrestricted Funds',
                         type: 'bar',
-                        marker: { color: '#f1c40f' }
+                        marker: { color: '#21cc72' }
                     }
                 ];
                 const barLayout = {
